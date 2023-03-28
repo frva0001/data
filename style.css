@@ -1,0 +1,38 @@
+/* start grid */
+
+#character {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   padding: 25px;
+   gap: 50px;
+}
+
+img {
+   height: 200px;
+}
+
+#character article {
+   text-align: center;
+   background-color: cornsilk;
+}
+
+/* body */
+
+body {
+   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+/* dialog */
+
+.grid-container figure {
+   grid-area: picture;
+}
+
+.grid-container article {
+   grid-area: description;
+}
+
+.grid-container {
+   display: grid;
+   grid-template-areas: picture description;
+}
