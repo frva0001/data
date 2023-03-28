@@ -13,26 +13,54 @@ img {
 
 #character article {
    text-align: center;
-   background-color: cornsilk;
+   background-color: #feb377;
+   box-shadow: 0px 0px 15px 15px #eab0d9;
 }
 
 /* body */
 
 body {
    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+   background-color: #f7e8f0;
 }
 
 /* dialog */
 
-.grid-container figure {
-   grid-area: picture;
+dialog {
+   background-color: #f1c6de;
+   height: 700px;
+   width: 600px;
+   border: none;
+   box-shadow: 0px 0px 15px 15px white;
 }
 
-.grid-container article {
-   grid-area: description;
+#dialog-image img {
+   width: 200px;
+   height: auto;
 }
 
 .grid-container {
    display: grid;
-   grid-template-areas: picture description;
+   grid-template-columns: 1fr 1fr;
+}
+
+/* button  */
+
+form {
+   margin: 2em;
+   background-color: #f1c6de;
+   text-align: center;
+}
+
+button {
+   font-weight: 300;
+   font-size: x-large;
+   text-align: center;
+   border-color: white;
+   color: white;
+   background-color: #eab0d9;
+   width: 100%;
+   max-width: 250px;
+   padding-top: 10px;
+   padding-bottom: 10px;
 }

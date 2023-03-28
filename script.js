@@ -26,9 +26,7 @@ function showCharacter(character) {
         <article>
             <h2><span>${character.name}</span></h2>
             <p>Nickname: <span>${character.nickname}</span></p>
-            <div id="bigPicture-container">
-               <img src= ${character.image}/>
-            </div>
+            <img src= ${character.image}/>
             <p>Occupation: <span>${character.occupation}</span></p>
         </article>
         `;
