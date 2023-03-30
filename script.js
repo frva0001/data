@@ -3,7 +3,6 @@
 window.addEventListener("load", start);
 
 async function start() {
-   // showAllCharacters(data);
    const characters = await getData("https://cederdorff.github.io/dat-js/05-data/southpark.json");
 
    characters.forEach(showCharacter);
@@ -14,12 +13,6 @@ async function getData(url) {
    const data = await response.json();
    return data;
 }
-
-function showAllCharacters(characters) {
-   //showCharacter(character);
-}
-
-// show content
 
 function showCharacter(character) {
    const myHTML = /*html*/ `
